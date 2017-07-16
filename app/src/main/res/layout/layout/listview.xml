@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/insertimagepic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/catelogProductName"
+            style="@style/productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/productName" />
+
+        <TextView
+            android:id="@+id/catelogProductPrice"
+            style="@style/productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/productPrice" />
+
+        <TextView
+            android:id="@+id/catelogSupplierName"
+            style="@style/productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier" />
+
+        <TextView
+            android:id="@+id/catelogSupplierEmail"
+            style="@style/productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/catelogNumberInStock"
+            style="@style/productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numberInStocks" />
+
+        <TextView
+            android:id="@+id/catelogNumberInShipment"
+            style="@style/productInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/numberInShipment" />
+    </LinearLayout>
+
+</LinearLayout>

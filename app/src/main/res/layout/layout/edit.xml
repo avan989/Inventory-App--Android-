@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/insertimagepic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/productName"
+                style="@style/productInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/productName" />
+
+            <EditText
+                android:id="@+id/productPrice"
+                style="@style/productInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/productPrice" />
+
+            <EditText
+                android:id="@+id/supplierName"
+                style="@style/productInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supplier" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/addPicture"
+            android:onClick="addPicture"/>
+
+        <EditText
+            android:id="@+id/supplierEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:hint="@string/email" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/numberinstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/numberInStocks" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/stockPlusButton"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/stockTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/stocksMinusButton"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- " />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/numberinstock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/numberInShipment" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/shipmentPlusButton"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/shipmentTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/shipmentMinusButton"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/orderMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="@string/orderMore" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="@string/add"
+            android:onClick="add"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
